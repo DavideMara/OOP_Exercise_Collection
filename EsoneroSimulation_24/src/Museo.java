@@ -1,0 +1,43 @@
+public class Museo {
+    private final Quadro[] V;
+
+    public Museo (int n, int m){
+        V = new Quadro[n + m];
+        for (int i = 0; i < n; i++){
+          V[i] = new Figurativo("Da Vinci", 1500, true);
+
+        }
+        for (int i = n; i < n + m; i++){
+            V[i]= new Astratto("Picasso", 1400, 40);
+        }
+
+    }
+    public double mediaCostiAutore(String nomeAutore) {
+        double sommaCosti = 0;
+        int contatore = 0;
+        for (Quadro quadro : V) {
+            if (quadro.getAutore().equals(nomeAutore)) {
+                contatore++;
+                sommaCosti = sommaCosti + quadro.costoRestauro();
+            }
+        }
+        if (contatore > 0) {
+            return sommaCosti / contatore;
+        } else {
+            return 0;
+        }
+    }
+
+    public static void main(String[] args) {
+        // 1. Build a museum with 3 figurative and 2 abstract paintings
+        Museo ilMioMuseo = new Museo(3, 2);
+
+        // 2. Ask the museum for the average cost of "Da Vinci"
+        double mediaDaVinci = ilMioMuseo.mediaCostiAutore("Da Vinci");
+
+        // 3. Print the result
+        System.out.println("La media dei costi di restauro per Da Vinci è: €" + mediaDaVinci);
+    }
+
+
+}
