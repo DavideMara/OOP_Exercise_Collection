@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Quadro {
-    private String autore;
+    private final String autore;
     private int annoRealizzazione;
 
     public Quadro(String autorePresunto, int annoPresunto) {

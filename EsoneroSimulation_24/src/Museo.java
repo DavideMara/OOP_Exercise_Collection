@@ -29,13 +29,9 @@ public class Museo {
     }
 
     public static void main(String[] args) {
-        // 1. Build a museum with 3 figurative and 2 abstract paintings
+        // test : Building a new Museo and then calculating the average Price for the Author
         Museo ilMioMuseo = new Museo(3, 2);
-
-        // 2. Ask the museum for the average cost of "Da Vinci"
         double mediaDaVinci = ilMioMuseo.mediaCostiAutore("Da Vinci");
-
-        // 3. Print the result
         System.out.println("La media dei costi di restauro per Da Vinci è: €" + mediaDaVinci);
     }
 

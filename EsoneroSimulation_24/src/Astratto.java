@@ -1,5 +1,5 @@
 public class Astratto extends Quadro {
-    private double area;
+    private final double area;
     public Astratto (String autore, int anno, double area){
         super (autore, anno);
         this.area = area;
