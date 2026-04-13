@@ -1,14 +1,17 @@
+import java.util.Random;
+
 public class Museo {
     private final Quadro[] V;
 
     public Museo (int n, int m){
+        Random rand = new Random();
+        String[] autori = {"Van Gogh", "Da Vinci","Michelangelo", "Pollok"};
         V = new Quadro[n + m];
         for (int i = 0; i < n; i++){
-          V[i] = new Figurativo("Da Vinci", 1500, true);
-
+            V[i] = new Figurativo( autori[rand.nextInt(autori.length)], rand.nextInt(2024), rand.nextBoolean());
         }
         for (int i = n; i < n + m; i++){
-            V[i]= new Astratto("Picasso", 1400, 40);
+            V[i]= new Astratto( autori[rand.nextInt(autori.length)],rand.nextInt(2024),rand.nextInt(100));
         }
 
     }

@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Quadro {
     private final String autore;
     private int annoRealizzazione;
