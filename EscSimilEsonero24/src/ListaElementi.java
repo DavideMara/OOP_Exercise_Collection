@@ -11,7 +11,6 @@ public class ListaElementi {
     public ListaElementi(int n) {
         this.testa = null;
         Random rand = new Random();
-
         for (int j = 0; j < n; j++) {
             // Using bound 20 to avoid negative numbers and massive strings
             int x = rand.nextInt(20);
@@ -51,7 +50,7 @@ public class ListaElementi {
         int counter = 0;
 
         if (current == null) {
-            return 0;
+            return counter;
         }
 
         if (current.getInfo().length() == s.length()) {
@@ -62,13 +61,9 @@ public class ListaElementi {
     }
 
     // Test se tutto funziona
-    public static void main(String[] args) {
+    public static void main() {
         ListaElementi l = new ListaElementi(80);
-
-        System.out.println("Stringhe con lunghezza uguale a 'javajava' (Iterativo): "
-                + l.contaOccorrenze("javajava"));
-
-        System.out.println("Stringhe con lunghezza uguale a 'umbria' (Ricorsivo): "
-                + l.contaOccorrenzeR("umbria", l.getTesta()));
+        System.out.println("Stringhe con lunghezza uguale a 'javajava' (Iterativo): " + l.contaOccorrenze("javajava"));
+        System.out.println("Stringhe con lunghezza uguale a 'umbria' (Ricorsivo): " + l.contaOccorrenzeR("umbria", l.getTesta()));
     }
 }
