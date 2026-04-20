@@ -30,7 +30,7 @@ public class Negozio {
         }
 
     }
-
+    // Function to test that everything works
     public static void main(String[] args) {
         Negozio test = new Negozio(6, 4);
         double media = test.mediaPrezzo("Samsung");
