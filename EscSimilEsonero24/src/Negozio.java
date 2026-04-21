@@ -2,7 +2,6 @@ import java.util.Random;
 
 public class Negozio {
     private Dispositivo[] D;
-
     public Negozio (int s, int t){
         Random rand = new Random();
         String[] marca = {"Samsung", "Apple", "Xiaomi","Redmi", "Sony","Google"};
@@ -28,7 +27,6 @@ public class Negozio {
         } else {
             return 0;
         }
-
     }
     // Function to test that everything works
     public static void main(String[] args) {
@@ -36,7 +34,4 @@ public class Negozio {
         double media = test.mediaPrezzo("Samsung");
         System.out.println("La media dei costi per è : " + media);
     }
-
-
-
 }
