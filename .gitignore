@@ -1,4 +1,15 @@
-.idea/
-*.class
-out/
-*.iml
+# Ignore everything by default
+*
+
+# Allow directories so we can find files within them
+!*/
+
+# Allow .java source files
+!*.java
+
+# Allow exercise instructions and materials
+!*.md
+!*.pdf
+
+# Allow .gitignore itself
+!.gitignore
