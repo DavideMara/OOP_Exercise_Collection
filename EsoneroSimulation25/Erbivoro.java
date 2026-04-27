@@ -6,7 +6,7 @@ class Erbivoro extends Dinosauro {
     private static final Random rand = new Random();
 
     public Erbivoro() {
-        super(SPECIE[rand.nextInt(SPECIE.length)], rand.nextInt());
+        super(SPECIE[rand.nextInt(SPECIE.length)], rand.nextInt(50) + 1);
         this.uovoRitrovato = rand.nextBoolean();
     }
     @Override

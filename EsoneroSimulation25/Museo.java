@@ -1,6 +1,6 @@
-import java.util.Random;
 // --- MUSEO ---
 public class Museo {
+
     private Dinosauro[] V;
 
     public Museo(int n, int m) {
@@ -41,9 +41,9 @@ public class Museo {
         System.out.println("Specie cercata: " + specieTest);
 
         if (media > 0) {
-            System.out.println("La media dei costi di restauro è: €" + media);
+            System.out.printf("La media dei costi di restauro è: €%.2f%n", media);
         } else {
-            System.out.println("Nessun dinosauro di questa specie trovato nel museo. Costo: €" + media);
+            System.out.println("Nessun dinosauro di questa specie trovato nel museo.");
         }
     }
 }
