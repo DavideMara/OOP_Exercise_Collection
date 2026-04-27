@@ -10,6 +10,7 @@
 # Allow exercise instructions and materials
 !*.md
 !*.pdf
+!README.md
 
 # Allow .gitignore itself
 !.gitignore

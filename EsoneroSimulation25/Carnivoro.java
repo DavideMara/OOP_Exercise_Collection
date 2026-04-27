@@ -1,4 +1,3 @@
-package src;
 import java.util.Random;
 
 class Carnivoro extends Dinosauro {
@@ -15,6 +14,6 @@ class Carnivoro extends Dinosauro {
     }
     @Override
     public double costoRestauro() {
-        return 700 + (getOssa() * 150) + (numeroDenti * 30);
+        return 700 + (getOssa() * 150) + (getNumeroDenti() * 30);
     }
 }

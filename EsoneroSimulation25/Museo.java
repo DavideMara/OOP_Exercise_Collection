@@ -1,4 +1,3 @@
-package src;
 import java.util.Random;
 // --- MUSEO ---
 public class Museo {
